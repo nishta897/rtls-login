@@ -1,0 +1,7 @@
+p {
+  font-size: 32px; /* Increase the font size */
+  text-align: center; /* Center the text horizontally */
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}

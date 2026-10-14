@@ -1,0 +1,200 @@
+<div class="header d-flex justify-content-between align-items-center">
+  <img src="/assets/icons/maestro_logo.svg" alt="Logo" />
+
+  <div class="user-section d-flex align-items-center">
+    <span class="text-secondary me-3">Hello, <b>Stas</b></span>
+
+    <div class="profile-wrapper me-3" (click)="toggleDropdown($event)">
+      <img src="/assets/icons/rectangle-25.webp" alt="User Image" class="hover-icon" />
+      <ul class="dropdown-menu" *ngIf="dropdownOpen">
+        <li (click)="goToProfile()"><img src="/assets/icons/profile_icon.png" alt="Profile Icon" class="menu-icon" />Profile</li>
+        <li (click)="logout()"> <img src="/assets/icons/logout_icon1.webp" alt="Logout Icon" class="menu-icon" />Logout</li>
+      </ul>
+    </div>
+
+    <img src="/assets/icons/support.svg" alt="Support Icon" class="hover-icon" (click)="goToSupport()" />
+  </div>
+</div>
+
+
+<div *ngIf="showProfileModal" class="fullscreen-profile">
+  <div class="profile-header">
+    <h2>Profile</h2>
+    <span class="profile-close-btn" (click)="closeProfile()">&times;</span>
+  </div>
+  <div class="profile-body">
+  <p>Welcome to your profile</p>
+  <img src="/assets/icons/rectangle-25@3x.webp" alt="Profile Icon" class="profile-icon" />
+  <div class="profile-info">
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+  </div>
+</div>
+
+  </div>
+
+
+<div class="header1 bg-white border-bottom p-1">
+  <p class="text-muted">
+    Customer Name > Facility Dashboard > <b style="color: #71b42b">Battery Overview</b>
+  </p>
+</div>
+
+<div class="sidebar">
+  <img src="/assets/icons/facility-dash.svg" alt="Facility Dashboard"  (click)="navigateToFacilityDashboard()" />
+  <img src="/assets/icons/nav-equp.svg" alt="Equipment Navigation" (click)="navigateToEquipmentNavigation()" />
+  <img src="/assets/icons/icon-feather-alert-triangle.svg" alt="Alert Icon" (click)="navigateToAlertIcon()" />
+</div>
+
+<div class="dashboard-container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="box">
+        <img src="/assets/icons/blue_battery.svg" alt="Total Batteries" />
+        <h3 class="text-info">50</h3>
+        <p><b>Total No. of Batteries</b></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">
+        <img src="/assets/icons/green_battery.svg" alt="Online Batteries" />
+        <h3 class="text-success">40</h3>
+        <p><b>Online Batteries</b></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="box">
+        <img src="/assets/icons/black_battery.svg" alt="Offline Batteries" />
+        <h3 class="text-secondary">10</h3>
+        <p><b>Offline Batteries</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator">
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Battery</th>
+            <th>SOC</th>
+            <th>Notification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger" (click)="navigateToColumn1ABF00004() 
+">
+            <td class="text-danger rounded-left">ABF00004</td>
+            <td class="text-danger">-</td>
+            <td class="text-danger rounded-right">Error Communicating w Device</td>
+          </tr>
+          <tr class="table-warning">
+            <td class="text-warning rounded-left">ABF00007</td>
+            <td class="text-warning">40</td>
+            <td class="text-warning rounded-right">Charging 15 min</td>
+          </tr>
+          <tr class="table-info">
+            <td class="text-info rounded-left">ABF00005</td>
+            <td class="text-info">65</td>
+            <td class="text-info rounded-right">Idle for 2 days</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000012</td>
+            <td class="text-success">70</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000018</td>
+            <td class="text-success">74</td>
+            <td class="text-success rounded-right">Disconnected from 25min</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000013</td>
+            <td class="text-success">80</td>
+            <td class="text-success rounded-right">Idle for 15min</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">BF000015</td>
+            <td class="text-success">100</td>
+            <td class="text-success rounded-right">Fully Charged</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000015</td>
+            <td class="text-success">100</td>
+            <td class="text-success rounded-right">Fully Charged</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000015</td>
+            <td class="text-success">100</td>
+            <td class="text-success rounded-right">Fully Charged</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000015</td>
+            <td class="text-success">100</td>
+            <td class="text-success rounded-right">Fully Charged</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Battery</th>
+            <th>SOC</th>
+            <th>Notification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger">
+            <td class="text-danger rounded-left">ABF00004</td>
+            <td class="text-danger">-</td>
+            <td class="text-danger rounded-right">Error Communicating w Device</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000013</td>
+            <td class="text-success">80</td>
+            <td class="text-success rounded-right">Idle for 15min</td>
+          </tr>
+          <tr class="table-warning">
+            <td class="text-warning rounded-left">ABF00007</td>
+            <td class="text-warning">40</td>
+            <td class="text-warning rounded-right">Charging 15 min</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000015</td>
+            <td class="text-success">100</td>
+            <td class="text-success rounded-right">Fully Charged</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000018</td>
+            <td class="text-success">74</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF00005</td>
+            <td class="text-success">65</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000012</td>
+            <td class="text-success">70</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000012</td>
+            <td class="text-success">70</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+          <tr class="table-success">
+            <td class="text-success rounded-left">ABF000012</td>
+            <td class="text-success">70</td>
+            <td class="text-success rounded-right">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<router-outlet name="modal"></router-outlet>

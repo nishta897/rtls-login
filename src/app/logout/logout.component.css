@@ -1,0 +1,95 @@
+
+.logout-container {
+  display: flex;
+  height: 100vh;
+  background: url('/assets/images/image_background.svg') no-repeat center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.left-section img {
+  width: 350px;
+  height: auto;
+   margin-right: 150px;
+}
+
+
+ .vertical-line {
+   border-left: 2px solid white;
+   height: 400px;
+   position: absolute;
+   left: 50%;
+   margin-left: -40px;
+}
+
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+
+.right-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-container {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+
+ .input-container img {
+    width: 10px;
+    margin-right: 10px; 
+    margin-left: 5px;
+}
+.input-container input {
+  border: none;
+  outline: none;
+}
+
+ button {
+   width: 150px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   color: white;
+   background-color:#5d55ff;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top: 30px;
+   margin-left: 80px;
+ }
+
+
+ button:hover{
+   background: #5f3cff;
+}
+
+
+small,
+.logout-message,
+.error-message {
+  margin-top: 5px;
+}

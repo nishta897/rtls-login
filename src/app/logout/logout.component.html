@@ -1,0 +1,47 @@
+<div class="logout-container">
+  <div class="left-section">
+    <img src="/assets/images/location_icon.svg" alt="Location Icon" />
+  </div>
+  <div class="vertical-line"></div>
+
+  <div class="right-section">
+    <h2 style="color: white;">RTLS</h2>
+
+    <form [formGroup]="logoutForm" (ngSubmit)="logout()">
+
+      <div class="input-container">
+        <img src="/assets/images/email-icon.svg" alt="Email Icon" />
+        <input
+          formControlName="email"
+          type="text"
+          placeholder="E-mail"
+        />
+      </div>
+      <div *ngIf="logoutForm.get('email')?.touched && logoutForm.get('email')?.invalid" style="color: red;">
+        <small *ngIf="logoutForm.get('email')?.errors?.['required']">Email is required</small>
+        <small *ngIf="logoutForm.get('email')?.errors?.['email']">Enter a valid email</small>
+      </div>
+
+      <div class="input-container">
+        <img src="/assets/images/password-icon.svg" alt="Password Icon" />
+        <input
+          formControlName="password"
+          type="password"
+          placeholder="Password"
+        />
+      </div>
+      <div *ngIf="logoutForm.get('password')?.touched && logoutForm.get('password')?.invalid" style="color: red;">
+        <small>Password is required</small>
+      </div>
+
+      <button type="submit" [disabled]="logoutForm.invalid">LOGIN</button>
+    </form>
+
+    <div *ngIf="logoutMessage" style="color: green; font-weight: bold;">
+      {{ logoutMessage }}
+    </div>
+    <div *ngIf="errorMessage" style="color: red; font-weight: bold;">
+      {{ errorMessage }}
+    </div>
+  </div>
+</div>

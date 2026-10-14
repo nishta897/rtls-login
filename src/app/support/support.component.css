@@ -1,0 +1,48 @@
+.support-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.support-options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #71b42b;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.support-options button:hover {
+  background-color: #5a9623;
+}
+
+.info-note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
+
+
+.back-to-dashboard {
+  margin-top: 30px;
+}
+
+.back-to-dashboard button {
+  padding: 10px 20px;
+  background-color: #4033f8; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-dashboard button:hover {
+  background-color: #5d60ee;
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="Icon feather-alert-triangle">
+        <path style="fill:none" d="M0 0h40v40H0z"/>
+        <path data-name="Path 2185" d="M16.546 6.154 2.764 32.711a4.264 4.264 0 0 0-.009 3.739 3.213 3.213 0 0 0 2.791 1.9H33.11a3.213 3.213 0 0 0 2.791-1.9 4.264 4.264 0 0 0-.009-3.739L22.11 6.154a3.045 3.045 0 0 0-5.565 0z" style="stroke-width:2px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none" transform="translate(.672 -1.346)"/>
+        <path data-name="Path 2186" d="M18 13.5v7.339" transform="translate(2 1.935)" style="stroke-width:3px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+        <path data-name="Path 2187" d="M18 25.5h0" transform="translate(2 3.569)" style="stroke-width:4px;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;fill:none"/>
+    </g>
+</svg>

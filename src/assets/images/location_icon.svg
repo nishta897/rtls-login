@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="345.65" height="196.257" viewBox="0 0 345.65 196.257">
+    <defs>
+        <style>
+            .prefix__cls-4{fill:#6c63ff}
+        </style>
+    </defs>
+    <g id="prefix__icon" transform="translate(-85.824 -33)">
+        <path id="prefix__Path_406" d="M-93.673 118.6h212.3l133.349 42.779H0z" data-name="Path 406" transform="translate(179.497 67.883)" style="fill:#e6e6e6"/>
+        <g id="prefix__Group_326" data-name="Group 326">
+            <path id="prefix__Path_407" d="M-78.411 91.754H90.034l114.723 33.88H0z" data-name="Path 407" transform="translate(203.106 85.753)" style="fill:#fff"/>
+            <path id="prefix__Path_2" d="M222.89 285.478c18.46 0 33.424 3.55 33.424 7.933s-14.964 7.931-33.424 7.931-33.424-3.55-33.424-7.931 14.964-7.933 33.424-7.933z" data-name="Path 2" transform="translate(33.411 -99.455)" style="fill-rule:evenodd;opacity:.3"/>
+        </g>
+        <circle id="prefix__Ellipse_8" cx="9.857" cy="9.857" r="9.857" class="prefix__cls-4" data-name="Ellipse 8" transform="translate(247.462 174.593)"/>
+        <path id="prefix__Path_405" d="M770.881 110.479a37.269 37.269 0 00-37.269 37.269c0 20.583 37.269 98.5 37.269 98.5s37.269-77.913 37.269-98.5a37.269 37.269 0 00-37.269-37.269zm0 55.016a17.747 17.747 0 1117.747-17.747 17.747 17.747 0 01-17.747 17.747z" class="prefix__cls-4" data-name="Path 405" transform="translate(-512.705 -77.479)"/>
+    </g>
+</svg>

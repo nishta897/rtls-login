@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g data-name="Rectangle 25" style="stroke:#b1ce8f;fill:none">
+        <rect width="32" height="32" rx="16" style="stroke:none"/>
+        <rect x=".5" y=".5" width="31" height="31" rx="15.5" style="fill:none"/>
+    </g>
+    <path data-name="Icon material-headset-mic" d="M12.084 1.5A7.584 7.584 0 0 0 4.5 9.084v5.9a2.525 2.525 0 0 0 2.528 2.526h2.528v-6.741H6.185V9.084a5.9 5.9 0 1 1 11.8 0v1.685h-3.373v6.741h3.371v.843h-5.9v1.685h5.057a2.525 2.525 0 0 0 2.528-2.528V9.084A7.584 7.584 0 0 0 12.084 1.5z" transform="translate(3.5 5.5)" style="fill:#487217"/>
+</svg>
